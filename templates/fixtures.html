@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Devon RFU Colts - Fixtures</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<script>
+    const toggleButton = document.getElementById("mobile-toggle");
+    const navMenu = document.getElementById("main-navigation");
+
+    toggleButton.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+    });
+</script>
+<body>
+<header>
+    <!-- Mobile toggle button -->
+    <button id="mobile-toggle" aria-label="Toggle navigation">
+        ☰ Menu
+    </button>
+
+    <!-- Navigation bar -->
+    <nav>
+        <ul id="main-navigation">
+            <li><a href="https://devonrfu.co.uk/about/"><span>About Us</span></a></li>
+            <li><a href="https://devonrfu.co.uk/age-grade/"><span>Age Grade</span></a></li>
+            <li><a href="https://devonrfu.co.uk/male-game/"><span>Male Game</span></a></li>
+            <li><a href="https://devonrfu.co.uk/female-game/"><span>Female Game</span></a></li>
+            <li><a href="https://devonrfu.co.uk/coaching/"><span>Coaching</span></a></li>
+            <li><a href="https://devonrfu.co.uk/rugby-variations/"><span>Rugby Variations</span></a></li>
+            <li><a href="https://devonrfu.co.uk/useful-info/"><span>Useful Info</span></a></li>
+            <li><a href="https://devonrfu.co.uk/contact-us/"><span>Get in Touch</span></a></li>
+        </ul>
+    </nav>
+
+    <section class="hero-banner">
+        <div class="banner-content">
+            <img src="{{ url_for('static', filename='quino-al-XAlKHW9ierw-unsplash.jpg') }}" alt="Rugby banner">
+        </div>
+    </section>
+
+</header>
+
+    <div class="content">
+    <div class="fixtures-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Opponent</th>
+                    <th>Venue</th>
+                    <th>Kick-off</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for fixture in fixtures %}
+                <tr>
+                    <td>{{ fixture.date }}</td>
+                    <td>{{ fixture.opponent }}</td>
+                    <td>{{ fixture.venue }}</td>
+                    <td>{{ fixture.time }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+
+    </div>
+
+<footer class="page-footer">
+    <p>
+        Y'all ever listen to evanescence and just ascend to a higher state of consciousness?
+        <br>
+
+
+        <br><br>
+
+        Devon RFU Colts 2025
+    </p>
+</footer>
+</body>
+</html>
