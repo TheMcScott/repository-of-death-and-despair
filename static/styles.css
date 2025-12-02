@@ -79,9 +79,12 @@ footer {
 nav {
     background-color: #fff;
     width: 100%;
+    background-color: #111;
     display: flex;
+    color: #eee;
     justify-content: center;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding:1.2vw
 }
 
 #main-navigation {
@@ -89,12 +92,13 @@ nav {
     display: flex;
     margin: 0;
     padding: 0;
+
 }
 
 #main-navigation > li > a {
     display: inline-block;
     padding: 14px 28px;
-    background-color: #fff;
+    background-color: #efefef;
     color: #000;
     text-decoration: none;
     font-weight: bold;
@@ -217,7 +221,7 @@ tr:hover {
 
 @media (max-width: 1024px) {
     .fixtures-container {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 }
 
