@@ -3,16 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Devon RFU Colts - Fixtures</title>
+    <link rel="icon" type="icon" href="{{ url_for('static', filename='faviconV2.png') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0">
 </head>
-<script>
-    const toggleButton = document.getElementById("mobile-toggle");
-    const navMenu = document.getElementById("main-navigation");
-
-    toggleButton.addEventListener("click", () => {
-        navMenu.classList.toggle("show");
-    });
-</script>
 <body>
 <header>
     <button id="mobile-toggle" aria-label="Toggle navigation">
@@ -20,10 +14,10 @@
     </button>
 
     <nav>
-        <ul id="main-navigation">
             <a href="https://devonrfu.co.uk">
             <img class="site-logo" src="https://devonrfu.co.uk/wp-content/uploads/2025/03/devonrfu-logo.svg" width="auto" height="67vw" style="align-self:left; padding-right:14vw" title="Devon RFU">
             </a>
+        <ul id="main-navigation">
             <li><a href="https://devonrfu.co.uk/about/"><span>About Us</span></a></li>
             <li><a href="https://devonrfu.co.uk/age-grade/"><span>Age Grade</span></a></li>
             <li><a href="https://devonrfu.co.uk/male-game/"><span>Male Game</span></a></li>
@@ -34,6 +28,14 @@
             <li><a href="https://devonrfu.co.uk/contact-us/"><span>Get in Touch</span></a></li>
         </ul>
     </nav>
+    <script>
+    const toggleButton = document.getElementById("mobile-toggle");
+    const navMenu = document.getElementById("main-navigation");
+
+    toggleButton.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+    });
+</script>
 
     <section class="hero-banner">
         <div class="banner-content">
@@ -72,7 +74,7 @@
 
 <footer class="page-footer">
     <p>
-        Y'all ever listen to evanescence and just ascend to a higher state of consciousness?
+        askew
         <br>
 
 
