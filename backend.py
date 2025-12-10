@@ -7,6 +7,7 @@ fixtures = [
     {"date": "2025-12-06", "opponent": "zurt", "venue": "Home", "time": "14:00"},
     {"date": "2025-12-13", "opponent": "jurt", "venue": "Away", "time": "15:00"},
     {"date": "2025-12-20", "opponent": "gurt", "venue": "Home", "time": "14:30"},
+    {"date": "2025-12-25", "opponent": "purt", "venue": "Home", "time": "16:00"},
 ]
 
 @app.route("/")
